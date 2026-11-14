@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookNest | Books</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html">Book<span>Nest</span></a>
+  <nav><a href="index.html">Home</a><a class="active" href="books.html">Books</a><a href="contact.html">Contact</a></nav>
+</header>
+
+<main>
+  <section class="page-intro">
+    <p class="eyebrow">THE BOOK COLLECTION</p>
+    <h1>Find your next favourite</h1>
+    <p>Search by title, author or category, or choose a category below.</p>
+  </section>
+
+  <section class="catalogue section">
+    <div class="filter-chips" aria-label="Book categories">
+      <button class="chip active" data-filter="All">All books</button>
+      <button class="chip" data-filter="Science">Science</button>
+      <button class="chip" data-filter="Fiction">Fiction</button>
+      <button class="chip" data-filter="Self-help">Self-help</button>
+      <button class="chip" data-filter="Technology">Technology</button>
+    </div>
+    <form class="search-box" id="searchForm">
+      <input id="searchInput" type="search" placeholder="Search book, author or category..." aria-label="Search books">
+      <button class="btn" type="submit">Search</button>
+      <button class="btn btn-muted" type="button" id="resetBtn">Reset</button>
+    </form>
+    <p class="result-count" id="resultCount" aria-live="polite"></p>
+    <div class="book-grid" id="bookGrid">
+      <article class="book-card" data-category="Science" data-search="the science book dk publishing science physics biology">
+        <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?w=700" alt="The Science Book">
+        <div class="book-info"><span class="tag">Science</span><h3>The Science Book</h3><p>DK Publishing</p><strong>₹399</strong><div class="card-actions"><button class="btn btn-small details-btn">Details</button><a class="btn btn-small btn-outline" href="contact.html?book=The%20Science%20Book">Enquire</a><button class="btn btn-small buy-btn">Purchase</button></div></div>
+      </article>
+      <article class="book-card" data-category="Science" data-search="a brief history of time stephen hawking science space physics">
+        <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=700" alt="A Brief History of Time">
+        <div class="book-info"><span class="tag">Science</span><h3>A Brief History of Time</h3><p>Stephen Hawking</p><strong>₹350</strong><div class="card-actions"><button class="btn btn-small details-btn">Details</button><a class="btn btn-small btn-outline" href="contact.html?book=A%20Brief%20History%20of%20Time">Enquire</a><button class="btn btn-small buy-btn">Purchase</button></div></div>
+      </article>
+      <article class="book-card" data-category="Science" data-search="the gene an intimate history siddhartha mukherjee science biology">
+        <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=700" alt="The Gene">
+        <div class="book-info"><span class="tag">Science</span><h3>The Gene</h3><p>Siddhartha Mukherjee</p><strong>₹425</strong><div class="card-actions"><button class="btn btn-small details-btn">Details</button><a class="btn btn-small btn-outline" href="contact.html?book=The%20Gene">Enquire</a><button class="btn btn-small buy-btn">Purchase</button></div></div>
+      </article>
+      <article class="book-card" data-category="Fiction" data-search="the hidden story olivia brown fiction mystery">
+        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=700" alt="The Hidden Story">
+        <div class="book-info"><span class="tag">Fiction</span><h3>The Hidden Story</h3><p>Olivia Brown</p><strong>₹299</strong><div class="card-actions"><button class="btn btn-small details-btn">Details</button><a class="btn btn-small btn-outline" href="contact.html?book=The%20Hidden%20Story">Enquire</a><button class="btn btn-small buy-btn">Purchase</button></div></div>
+      </article>
+      <article class="book-card" data-category="Fiction" data-search="the silent forest emma wilson fiction adventure">
+        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=700" alt="The Silent Forest">
+        <div class="book-info"><span class="tag">Fiction</span><h3>The Silent Forest</h3><p>Emma Wilson</p><strong>₹275</strong><div class="card-actions"><button class="btn btn-small details-btn">Details</button><a class="btn btn-small btn-outline" href="contact.html?book=The%20Silent%20Forest">Enquire</a><button class="btn btn-small buy-btn">Purchase</button></div></div>
+      </article>
+      <article class="book-card" data-category="Fiction" data-search="midnight mystery arjun mehta fiction thriller">
+        <img src="https://images.unsplash.com/photo-1516979187457-637abba4f935?w=700" alt="Midnight Mystery">
+        <div class="book-info"><span class="tag">Fiction</span><h3>Midnight Mystery</h3><p>Arjun Mehta</p><strong>₹320</strong><div class="card-actions"><button class="btn btn-small details-btn">Details</button><a class="btn btn-small btn-outline" href="contact.html?book=Midnight%20Mystery">Enquire</a><button class="btn btn-small buy-btn">Purchase</button></div></div>
+      </article>
+      <article class="book-card" data-category="Self-help" data-search="small steps big change david smith self help personal growth">
+        <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=700" alt="Small Steps Big Change">
+        <div class="book-info"><span class="tag">Self-help</span><h3>Small Steps, Big Change</h3><p>David Smith</p><strong>₹299</strong><div class="card-actions"><button class="btn btn-small details-btn">Details</button><a class="btn btn-small btn-outline" href="contact.html?book=Small%20Steps%20Big%20Change">Enquire</a><button class="btn btn-small buy-btn">Purchase</button></div></div>
+      </article>
+      <article class="book-card" data-category="Technology" data-search="digital world james wilson technology computers">
+        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=700" alt="Digital World">
+        <div class="book-info"><span class="tag">Technology</span><h3>Digital World</h3><p>James Wilson</p><strong>₹449</strong><div class="card-actions"><button class="btn btn-small details-btn">Details</button><a class="btn btn-small btn-outline" href="contact.html?book=Digital%20World">Enquire</a><button class="btn btn-small buy-btn">Purchase</button></div></div>
+      </article>
+      <article class="book-card" data-category="Technology" data-search="coding for everyone neha sharma technology programming">
+        <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?w=700" alt="Coding for Everyone">
+        <div class="book-info"><span class="tag">Technology</span><h3>Coding for Everyone</h3><p>Neha Sharma</p><strong>₹375</strong><div class="card-actions"><button class="btn btn-small details-btn">Details</button><a class="btn btn-small btn-outline" href="contact.html?book=Coding%20for%20Everyone">Enquire</a><button class="btn btn-small buy-btn">Purchase</button></div></div>
+      </article>
+    </div>
+    <p class="empty-message" id="noResults" hidden>No books found. Try another search or category.</p>
+  </section>
+</main>
+
+<div class="modal" id="bookModal" aria-hidden="true">
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="closeModal" aria-label="Close">×</button>
+    <p class="eyebrow" id="modalCategory"></p>
+    <h2 id="modalTitle"></h2>
+    <p id="modalAuthor"></p>
+    <p id="modalDescription">Explore this title from the BookNest collection. Contact us to ask about availability.</p>
+    <a class="btn" id="modalEnquire" href="contact.html">Enquire about this book</a>
+  </div>
+</div>
+<footer><p>© 2026 BookNest. Read more, discover more.</p><a href="contact.html">Contact us</a></footer>
+</body>
+</html>

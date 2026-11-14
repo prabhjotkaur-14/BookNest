@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookNest | Enquiry</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html">Book<span>Nest</span></a>
+  <nav><a href="index.html">Home</a><a href="books.html">Books</a><a class="active" href="contact.html">Contact</a></nav>
+</header>
+<main>
+  <section class="page-intro"><p class="eyebrow">WE'RE HERE TO HELP</p><h1>Book enquiry</h1><p>Send an enquiry about a book and our demo form will confirm your submission.</p></section>
+  <section class="contact-wrap section">
+    <form class="contact-form" id="contactForm">
+      <label for="bookName">Book name</label><input id="bookName" name="book" required placeholder="Enter book name">
+      <label for="customerName">Your name</label><input id="customerName" name="name" required placeholder="Your name">
+      <label for="email">Email address</label><input id="email" name="email" type="email" required placeholder="you@example.com">
+      <label for="message">Message</label><textarea id="message" name="message" rows="4" placeholder="Your question or enquiry"></textarea>
+      <button class="btn" type="submit">Submit enquiry</button>
+      <p class="form-feedback" id="formFeedback" aria-live="polite"></p>
+    </form>
+  </section>
+</main>
+<footer><p>© 2026 BookNest. Read more, discover more.</p><a href="books.html">Back to books</a></footer>
+</body>
+</html>
